@@ -1,0 +1,23 @@
+.password {
+	margin: 6px 0;
+}
+
+.password input {
+	margin: 0;
+	padding: 6px 12px;
+}
+
+.password .btn {
+	margin-left: 12px;
+	border-radius: 0;
+	padding: 6px 12px;
+}
+
+.password #key {
+	margin: 0;
+}
+
+.password #value {
+	margin:0;
+	margin-left: 6px;
+}
