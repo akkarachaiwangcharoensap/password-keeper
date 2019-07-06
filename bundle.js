@@ -10852,6 +10852,11 @@ const PasswordComponent = (function () {
 			this.storage.save();
 		})
 
+		// On value changed
+		$value.change(() => {
+			this.storage.save();
+		})
+
 		// On remove clicked
 		$remove.click((e) => {
 			e.preventDefault();
@@ -10878,7 +10883,7 @@ const PasswordComponent = (function () {
 
 		this.$el = '<div class="col-12 password">'
 			+ '<input type="text" id="key" placeholder="Key name" value="'+ key +'">'
-			+ '<input type="text" id="value" readonly="" placeholder="" value="'+ value +'">'
+			+ '<input type="text" id="value" placeholder="" value="'+ value +'">'
 			+ '<button class="btn btn-primary" id="copy">Copy</button>'
 			+ '<button class="btn btn-success" id="generate">Generate</button>'
 			+ '<button class="btn btn-danger" id="remove">Remove</button>'
